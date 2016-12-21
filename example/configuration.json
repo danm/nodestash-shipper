@@ -1,0 +1,41 @@
+{
+    "logback": {
+        "elastic": {
+            "endpoint": "",
+            "level": 0
+        },
+        "sqs": {
+            "level": 3,
+            "region": "eu-west-1",
+            "queueUrl": "",
+            "accessKeyId": "",
+            "secretAccessKey": ""
+        }
+    },
+    "rest": {
+        "active": true,
+        "port": 3001
+    },
+    "s3": {
+        "region": "eu-west-1",
+        "accessKeyId": "",
+        "secretAccessKey": ""
+    },
+    "input": {
+        "sqs": {
+            "active": true,
+            "region": "eu-west-1",
+            "queueUrl": "",
+            "accessKeyId": "",
+            "secretAccessKey": ""
+        }
+    },
+    "output": {
+        "elastic": {
+            "filter": "",
+            "location": "",
+            "endpoint": "",
+            "batchSize": 1000
+        }
+    }
+}
