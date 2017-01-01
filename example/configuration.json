@@ -21,6 +21,10 @@
         "accessKeyId": "",
         "secretAccessKey": ""
     },
+    "mongo": {
+        "database": "abacus",
+        "region": "eu-west-1"
+    },
     "input": {
         "sqs": {
             "active": true,
