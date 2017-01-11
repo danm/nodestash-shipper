@@ -40,6 +40,13 @@
             "location": "",
             "endpoint": "",
             "batchSize": 1000
+        },
+        "s3": {
+            "active": true,
+            "region": "eu-west-1",
+            "accessKeyId": "",
+            "secretAccessKey": "",
+            "bucket": ""
         }
     }
 }
