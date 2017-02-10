@@ -1,7 +1,10 @@
 const Shipper = require('../index');
-const config = require('./configuration-secure.json');
-const cargo = new Shipper(config);
+const configurator = require('./config.js');
+
+const cargo = new Shipper(configurator.getConfig, configurator.getEnvironment);
 cargo.setup((err) => {
     if (err) throw err;
-    cargo.sqs.start();
+    for (let sqs of cargo.sqs) {
+        sqs.start();
+    }
 });
