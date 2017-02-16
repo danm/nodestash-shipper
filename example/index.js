@@ -1,10 +1,8 @@
 const Shipper = require('../index');
-const configurator = require('./config.js');
+const configurator = require('abacus-pipline-configurator');
 
-const cargo = new Shipper(configurator.getConfig, configurator.getEnvironment);
+const cargo = new Shipper(configurator.getConfig);
 cargo.setup((err) => {
     if (err) throw err;
-    for (let sqs of cargo.sqs) {
-        sqs.start();
-    }
+    cargo.sqs.start();
 });
