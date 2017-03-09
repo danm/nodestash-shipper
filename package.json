@@ -1,38 +1,39 @@
 {
-  "name": "nodestash-shipper",
-  "version": "0.0.53",
-  "description": "Shipper for Nodestash",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha",
-    "bump": "npm version patch -m 'version bump' && git push && npm publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danm/nodestash-shipper.git"
-  },
-  "keywords": [
-    "Nodestash",
-    "logs",
-    "analytics"
-  ],
-  "author": "Daniel Morrison",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/danm/nodestash-shipper/issues"
-  },
-  "homepage": "https://github.com/danm/nodestash-shipper#readme",
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0"
-  },
-  "dependencies": {
-    "aws-sdk": "^2.7.15",
-    "express": "^4.14.0",
-    "logback": "*",
-    "mongodb": "^2.2.16",
-    "pg": "^6.1.2",
-    "request": "^2.79.0",
-    "sqs-consumer": "^3.4.0"
-  }
+    "name": "nodestash-shipper",
+    "version": "0.0.53",
+
+    "description": "Shipper for Nodestash",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha",
+        "bump": "npm version patch -m 'version bump' && git push && npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danm/nodestash-shipper.git"
+    },
+    "keywords": [
+        "Nodestash",
+        "logs",
+        "analytics"
+    ],
+    "author": "Daniel Morrison",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/danm/nodestash-shipper/issues"
+    },
+    "homepage": "https://github.com/danm/nodestash-shipper#readme",
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "mocha": "^3.2.0"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.7.15",
+        "express": "^4.14.0",
+        "logback": "*",
+        "mongodb": "^2.2.16",
+        "pg": "^6.1.2",
+        "request": "^2.79.0",
+        "sqs-consumer": "^3.4.0"
+    }
 }
