@@ -1,6 +1,6 @@
 {
   "name": "nodestash-shipper",
-  "version": "0.0.62",
+  "version": "1.0.0",
   "description": "Shipper for Nodestash",
   "main": "index.js",
   "scripts": {
