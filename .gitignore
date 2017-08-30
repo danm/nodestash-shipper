@@ -39,3 +39,5 @@ jspm_packages
 example/configuration-secure.json
 
 configuration-secure.json
+
+test/configuration-sandbox.json
